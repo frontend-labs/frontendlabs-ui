@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ES5",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es2015",
+            "es2015.promise"
+        ],
+        "skipLibCheck": true,
+        "inlineSourceMap": true,
+    },
+    "include": [
+        "src/**/*",
+        "index.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
