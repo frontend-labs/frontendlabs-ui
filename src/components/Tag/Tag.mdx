@@ -1,0 +1,47 @@
+---
+name: Tag
+status: development
+menu: Componentes
+---
+
+import { Props, Playground } from '@papyrum/ui-docs';
+import { Tag } from './Tag';
+
+# Tag
+
+### Importación
+```
+import { Tag } from 'frontendlabs-ui';
+```
+
+### Uso básico
+
+<Playground>
+  <Tag name="javascript"/>
+</Playground>
+
+### Tags existentes
+
+tag|name
+-|-
+<Tag name="jade" />|Jade
+<Tag name="Javascript" />|Javascript
+<Tag name="Nodejs" />|Nodejs
+<Tag name="Stylus" />|Stylus
+<Tag name="React" />|React
+<Tag name="Angular" />|Angular
+<Tag name="Css" />|Css
+<Tag name="Html" />|Html
+<Tag name="Pug" />|Pug
+<Tag name="Vue" />|Vue
+<Tag name="Typescript" />|Typescript
+<Tag name="Ruby" />|Ruby
+<Tag name="Linux" />|Linux
+
+En caso de mandar una propiedad que no existe, se le mostrará el tag por defecto.
+
+<Tag name="otro" />
+
+### Props
+
+<Props of={Tag} />
