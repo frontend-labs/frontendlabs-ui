@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "homepage": "https://github.com/frontend-labs/frontendlabs-ui",
   "scripts": {
     "dev": "papyrum dev",
     "build": "papyrum build && tsc -p tsconfig.json"
@@ -10,10 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^3.6.3"
+    "typescript": "3.6.3"
   },
   "devDependencies": {
-    "@papyrum/cli": "0.3.0",
-    "@papyrum/ui-docs": "0.3.0"
+    "@papyrum/cli": "1.9.1-alpha.0"
   }
 }

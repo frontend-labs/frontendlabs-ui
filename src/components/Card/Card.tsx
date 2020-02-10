@@ -38,8 +38,8 @@ export const Card: React.FC<Props> = ({
         <Date>{date}</Date>
       </Head>
       <Title>{title}</Title>
-      {tags.map(tag => (
-        <Tag name={tag} />
+      {tags.map((tag , key)=> (
+        <Tag name={tag} key={key} />
       ))}
     </Wrapper>
   )
@@ -51,5 +51,5 @@ Card.propTypes = {
   avatar: p.string.isRequired,
   date: p.string.isRequired,
   title: p.string.isRequired,
-  tags: p.string.isRequired
-  };
+  tags: p.arrayOf(p.string).isRequired
+};

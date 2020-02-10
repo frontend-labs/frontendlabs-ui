@@ -16,4 +16,5 @@ export const Wrapper = styled.div`
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
-`
+  cursor: pointer;
+`;
