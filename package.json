@@ -1,5 +1,5 @@
 {
-  "name": "frontendlabs-ui",
+  "name": "@frontendlabs/ui",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -11,9 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "i": "^0.3.6",
     "typescript": "3.6.3"
   },
   "devDependencies": {
-    "@papyrum/cli": "1.9.1-alpha.0"
+    "@papyrum/cli": "1.0.1"
   }
 }
