@@ -6,15 +6,16 @@
   "homepage": "https://github.com/frontend-labs/frontendlabs-ui",
   "scripts": {
     "dev": "papyrum dev",
-    "build": "papyrum build && tsc -p tsconfig.json"
+    "build:library": "rimraf dist && tsc -p tsconfig.json",
+    "build": "papyrum build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "i": "^0.3.6",
     "typescript": "3.6.3"
   },
   "devDependencies": {
-    "@papyrum/cli": "1.0.1"
+    "@papyrum/cli": "1.0.1",
+    "rimraf": "^3.0.2"
   }
 }
