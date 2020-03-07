@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const InnerWrap = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column
+  flex-direction: column;
   max-width: 1800px;
   height: 100%;
   margin: auto;

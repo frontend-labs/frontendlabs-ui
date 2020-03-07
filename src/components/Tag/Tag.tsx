@@ -1,7 +1,7 @@
 import * as React from 'react';
+import * as p from 'prop-types';
 import { Wrapper } from './styled';
 import { tags } from './config';
-import p from 'prop-types';
 
 interface Props {
   name: string;
