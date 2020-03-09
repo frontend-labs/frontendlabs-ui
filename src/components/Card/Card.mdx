@@ -1,30 +1,73 @@
 ---
 name: Card
-status: development
+status: ready
 menu: Componentes
 ---
 
-import { Props, Playground } from '@papyrum/ui-docs';
 import { Card } from './Card';
+import { CardWrapper } from './styled';
 
 # Card
 
 ## Importación
 
 ```js
-import { Card } from 'frontendlabs-ui';
+import { Card } from '@frontendlabs/ui';
 ```
 
 ## Uso básico
 
 <Playground>
   <Card
-    url="https://frontendlabs.io/3543--frontend-developer-actualizado-al-dia"
-    author="Jan Sanchez"
+    url="/url"
+    author="Wilson Flores"
     avatar="https://avatars0.githubusercontent.com/u/4754339?s=400&v=4"
     date="10 junio, 2017"
-    title="SOY UN DESARROLLADOR FRONTEND ¿CÓMO ME MANTENGO ACTUALIZADO CON LAS ÚLTIMAS TECNOLOGÍAS?"
-    tags={["react", "javascript"]}
+    title="Titulo del post"
+    tags={["typescript", "javascript"]}
+  />
+</Playground>
+
+## Con un Wrapper
+
+<Playground>
+  <CardWrapper>
+    <Card
+      url="/url"
+      author="Wilson Flores"
+      avatar="https://avatars0.githubusercontent.com/u/4754339?s=400&v=4"
+      date="10 junio, 2017"
+      title="Titulo del post"
+      tags={["typescript", "javascript"]}
+    />
+    <Card
+      url="/url"
+      author="Wilson Flores"
+      avatar="https://avatars0.githubusercontent.com/u/4754339?s=400&v=4"
+      date="10 junio, 2017"
+      title="Titulo del post"
+      tags={["typescript", "javascript"]}
+    />
+  </CardWrapper>
+</Playground>
+
+## Link customizado
+
+Para el caso de usar react-router o gatsby donde se usa una etiqueta `Link` para poder moverse entre vistas.
+
+> Tanto el children y el className se usan de forma obligatoria, el children sirve para poder renderear el contenido del Card
+> y el className para poder darle estilos con styled-componentes
+
+<Playground>
+  <Card
+    renderLink={({ children, className }) => (
+      <a href="/example" className={className}>{children}</a>
+    )}
+    author="Wilson Flores"
+    avatar="https://avatars0.githubusercontent.com/u/4754339?s=400&v=4"
+    date="10 junio, 2017"
+    title="Titulo del post"
+    tags={["typescript", "javascript"]}
   />
 </Playground>
 
