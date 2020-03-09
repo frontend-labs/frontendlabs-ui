@@ -2,22 +2,22 @@ export const tags = {
   javascript: {
     nameTag: 'JavaScript',
     background: '#F0DB4F',
-    color: '#000'
+    color: '#000000'
   },
   jade: {
     nameTag: 'Jade',
     background: '#00a86b',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   nodejs: {
     nameTag: 'NodeJS',
     background: '#176e00',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   stylus: {
     nameTag: 'Stylus',
     background: '#333333',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   react: {
     nameTag: 'React',
@@ -27,22 +27,22 @@ export const tags = {
   angular: {
     nameTag: 'Angular',
     background: '#B52E31',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   css: {
     nameTag: 'CSS',
     background: '#61A8FB',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   html: {
     nameTag: 'HTML',
     background: '#F16529',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   pug: {
     nameTag: 'Pug',
     background: '#A86454',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   vue: {
     nameTag: 'Vue',
@@ -52,20 +52,20 @@ export const tags = {
   typescript: {
     nameTag: 'TypeScript',
     background: '#007ACC',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   ruby: {
     nameTag: 'Ruby',
     background: '#cc0000',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   linux: {
     nameTag: 'Linux',
     background: '#7D7D7D',
-    color: '#fff'
+    color: '#FFFFFF'
   },
   other: {
     background: '#DDDDDD',
-    color: '#fff'
+    color: '#7D7D7D'
   }
 };

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as p from 'prop-types';
+import styled from 'styled-components';
 
 import {
   Wrapper,
@@ -8,8 +9,10 @@ import {
   Author,
   Avatar,
   Date,
-  Title
+  Title,
+  styles
 } from './styled';
+
 import { Tag } from '../Tag/Tag';
 
 interface Props {
@@ -23,31 +26,41 @@ interface Props {
 
 export const Card: React.FC<Props> = ({
   url,
+  renderLink,
   author,
   avatar,
   date,
   title,
-  tags
+  tags,
 }) => {
+  console.log('renderLink', renderLink);
+  const Component = renderLink ? styled(renderLink)`${styles}` : Wrapper;
+  const maxTags = tags.slice(0, 2);
   return (
-    <Wrapper href={url} title={title}>
-      <Head>
-        <CardHead>
-          <Avatar src={avatar}></Avatar>
-          <Author>{author}</Author>
-        </CardHead>
-        <Date>{date}</Date>
-      </Head>
-      <Title>{title}</Title>
-      {tags.map((tag , key)=> (
-        <Tag name={tag} key={key} />
-      ))}
-    </Wrapper>
+    <Component href={url}>
+      <div>
+        <Head>
+          <CardHead>
+            <Avatar src={avatar}></Avatar>
+            <Author>{author}</Author>
+          </CardHead>
+          <Date>{date}</Date>
+        </Head>
+        <Title>{title.toUpperCase()}</Title>
+      </div>
+
+      <div>
+        {maxTags.map((tag , key)=> (
+          <Tag name={tag} key={key} />
+        ))}
+      </div>
+    </Component>
   )
 };
 
 Card.propTypes = {
-  url: p.string.isRequired,
+  url: p.string,
+  renderLink: p.node,
   author: p.string.isRequired,
   avatar: p.string.isRequired,
   date: p.string.isRequired,
