@@ -9,7 +9,7 @@ export const InnerWrap = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 1800px;
+  max-width: 1068px;
   height: 100%;
   margin: auto;
 `;

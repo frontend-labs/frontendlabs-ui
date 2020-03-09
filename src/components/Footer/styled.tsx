@@ -10,7 +10,7 @@ export const InnerWrap = styled.div`
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  max-width: 1800px;
+  max-width: 1068px;
   height: 100%;
   margin: auto;
 `;

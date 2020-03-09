@@ -1,8 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { Wrapper as TagWrapper } from '../Tag/styled';
 
-export const Wrapper = styled.a`
+export const styles = css`
+  text-decoration: none;
+  margin-bottom: 30px;
+  box-sizing: border-box;
   background-color: #FFFFFF;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 336px;
   height: 180px;
   left: 364px;
@@ -11,11 +17,19 @@ export const Wrapper = styled.a`
   box-shadow: 0px 1px 6px 1px #dcdcdc;
   padding: 15px;
   overflow: hidden;
-  color: #000;
-  text-decoration:none;
-  &: hover {
+  color: #000000;
+  cursor: pointer;
+  &:hover {
     background: #f5f5f5;
   }
+
+  ${TagWrapper} {
+    margin-bottom: 0;
+  }
+`;
+
+export const Wrapper = styled.a`
+  ${styles}
 `;
 
 export const Head = styled.div`
@@ -52,6 +66,7 @@ export const Date = styled.span`
 `;
 
 export const Title = styled.h3`
+  margin: 20px 0 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
@@ -59,4 +74,10 @@ export const Title = styled.h3`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+`;
+
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
