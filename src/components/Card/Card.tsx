@@ -46,7 +46,7 @@ export const Card: React.FC<Props> = ({
           </CardHead>
           <Date>{date}</Date>
         </Head>
-        <Title>{title.toUpperCase()}</Title>
+        <Title>{title}</Title>
       </div>
 
       <div>
