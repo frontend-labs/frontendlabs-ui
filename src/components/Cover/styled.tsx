@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
 `
 
 export const Logo = styled.img`
-  width: 107.19px;
-  height: 60px;
+  width: 125px;
+  height: 70px;
 `;
 
 export const Image = styled.div`
@@ -51,12 +51,12 @@ export const Image = styled.div`
 `;
 
 export const Tittle = styled.h1`
-  font-family: SN-NeoNoire;
-  font-weight: 100;
+  font-family: Nunito-latin;
+  font-weight: 600;
   font-size: 36px;
   line-height: 37px;
-  color: #00C2FF;
-  margin: 19px 0 0 0;
+  color: #03BBEB;
+  margin: 20px 0 0 0;
 `;
 
 export const Center = styled.div`
@@ -65,14 +65,14 @@ export const Center = styled.div`
 `;
 
 export const Vol = styled.div`
-  font-family: SN-NeoNoire;
+  font-family: Nunito-latin;
   font-weight: 100;
   display: inline-block;
   position: absolute;
-  right: 0;
-  font-size: 18px;
+  right: -30px;
+  font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
-  margin-top: 10px;
-  transform: rotate(-12.71deg);
+  margin-top: 0;
+  transform: rotate(-15deg);
 `;

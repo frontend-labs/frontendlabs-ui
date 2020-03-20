@@ -22,8 +22,8 @@ export const Cover: React.FC<Props> = () => {
       <Image />
       <Center>
         <Logo src={logo} alt=""/>
-        <Tittle>Frontendlabs</Tittle>
-        <Vol>Vol 2</Vol>
+        <Tittle>frontendlabs</Tittle>
+        <Vol>Vol. 2</Vol>
       </Center>
     </Wrapper>
   )
